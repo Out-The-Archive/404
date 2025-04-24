@@ -1,37 +1,49 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useState, useEffect } from "react";
+import { motion } from "motion/react"
 import "./App.css";
 
 function App() {
-    const [count, setCount] = useState(0);
+
+    const [mousePosition, setMousePosition] = useState({
+        x: 0,
+        y: 0
+    });
+
+    const [beeDirection, setBeeDirection] = useState({
+           
+    })
+    useEffect(() => {
+        const mouseMove = (e: MouseEvent) => {
+            setMousePosition({
+                x: e.clientX,
+                y: e.clientY
+            })
+        }
+
+        window.addEventListener("mousemove", mouseMove)
+
+        return () => {
+            window.removeEventListener("mousemove", mouseMove)
+        }
+
+    }, [])
+
+    const varients = {
+        default: {
+            x: mousePosition.x,
+            y: mousePosition.y
+        }
+    }
 
     return (
         <>
-            <div>
-                <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
-            </div>
-            <h1>Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
+            <h1>Hello World</h1>
+            <motion.div 
+                className="bg-white h-[32px] w-[32px] fixed top-0 left-0"
+                variants={varients}
+                animate="default"
+            />
+
         </>
     );
 }
