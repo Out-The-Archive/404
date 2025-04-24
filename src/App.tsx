@@ -8,30 +8,18 @@ function App() {
 
     return (
         <>
-            <div>
-                <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
+            <div className="grid grid-cols-12 grid-rows-8 gap-4 h-screen w-[100vw] border border-red-500">
+                <div className="col-start-11 col-span-2 row-span-2 border border-blue-500">home</div>
+                <div className="flex items-end col-start-2 col-span-5 row-start-2 row-span-2 border border-blue-500">
+                    <div className="bg-yellow-900 w-full h-[30px] rounded-sm"></div>
+                </div>
+                <div className="flex items-end col-start-2 col-span-9 row-start-6 row-span-2 border border-blue-500">
+                    <div className="bg-yellow-900 w-full h-[30px] rounded-sm"></div>
+                </div>
+                <div className="flex items-end col-start-5 col-span-7 row-start-4 row-span-2 border border-blue-500">
+                    <div className="bg-yellow-900 w-full h-[30px] rounded-sm"></div>
+                </div>
             </div>
-            <h1>Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
         </>
     );
 }
