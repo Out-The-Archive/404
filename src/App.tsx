@@ -9,7 +9,9 @@ function App() {
     return (
         <>
             <div className="grid grid-cols-12 grid-rows-8 gap-4 h-screen w-[100vw] border border-red-500">
-                <div className="col-start-11 col-span-2 row-span-2 border border-blue-500">home</div>
+                <div className="flex justify-center items-center col-start-11 col-span-2 row-span-2 border border-blue-500">
+                     <div className="bg-yellow-300 w-[70px] h-[70px] rounded-sm"></div>
+                </div>
                 <div className="flex items-end col-start-2 col-span-5 row-start-2 row-span-2 border border-blue-500">
                     <div className="bg-yellow-900 w-full h-[30px] rounded-sm"></div>
                 </div>
