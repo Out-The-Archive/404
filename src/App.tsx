@@ -17,7 +17,11 @@ function App() {
                     <div className="bg-yellow-900 w-full h-[30px] rounded-sm"></div>
                 </div>
                 <div className="flex flex-col justify-end col-start-5 col-span-7 row-start-4 row-span-2 border border-blue-500">
-                    <div className="bg-pink-500 w-[50px] h-[50px] rounded-sm"></div>
+                    <div className="flex flex-row justify-between px-4">
+                        <div className="bg-pink-500 w-[100px] h-[100px] rounded-sm"></div>
+                        <div className="bg-pink-500 w-[100px] h-[100px] rounded-sm"></div>
+                        <div className="bg-pink-500 w-[100px] h-[100px] rounded-sm"></div>
+                    </div>     
                     <div className="bg-yellow-900 w-full h-[30px] rounded-sm"></div>
                 </div>
             </div>
