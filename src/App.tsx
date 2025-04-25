@@ -8,10 +8,7 @@ function App() {
         x: 0,
         y: 0
     });
-
-    const [beeDirection, setBeeDirection] = useState({
-           
-    })
+    
     useEffect(() => {
         const mouseMove = (e: MouseEvent) => {
             setMousePosition({
@@ -28,22 +25,20 @@ function App() {
 
     }, [])
 
-    const varients = {
-        default: {
-            x: mousePosition.x,
-            y: mousePosition.y
-        }
-    }
-
     return (
         <>
-            <h1>Hello World</h1>
             <motion.div 
-                className="bg-white h-[32px] w-[32px] fixed top-0 left-0"
-                variants={varients}
-                animate="default"
+                className="bg-black h-[32px] w-[32px] fixed top-0 left-0"
+                transition={{
+                    type: 'spring',
+                    stiffness: 35,
+                    damping: 15
+                }}
+                animate={{
+                    x: mousePosition.x - 16,
+                    y: mousePosition.y - 16
+                }}  
             />
-
         </>
     );
 }
