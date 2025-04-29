@@ -32,8 +32,10 @@ function App() {
 
     return (
         <>
-            <motion.div 
-                className="bg-black h-[32px] w-[32px] fixed top-0 left-0"
+            <motion.img 
+                src={bee}
+                alt="Bee"
+                className="h-[50px] w-[50px] fixed top-0 left-0"
                 transition={{
                     type: 'spring',
                     damping: 65,
