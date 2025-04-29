@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react"
 import "./App.css";
+import bee from "./bee.png";
 
 function App() {
 
@@ -8,13 +9,17 @@ function App() {
         x: 0,
         y: 0
     });
-    
+
+    const [facingRight, setFacingRight] = useState(false);
+    const prevMouseX = useRef(mousePosition.x);
+
     useEffect(() => {
         const mouseMove = (e: MouseEvent) => {
-            setMousePosition({
-                x: e.clientX,
-                y: e.clientY
-            })
+            const dx = e.clientX - prevMouseX.current;
+            if (dx > 0) setFacingRight(true);
+            else if (dx < 0) setFacingRight(false);
+            prevMouseX.current = e.clientX;
+            setMousePosition({ x: e.clientX, y: e.clientY });
         }
 
         window.addEventListener("mousemove", mouseMove)
@@ -34,8 +39,9 @@ function App() {
                     damping: 65,
                 }}
                 animate={{
-                    x: mousePosition.x - 16,
-                    y: mousePosition.y - 16
+                    x: facingRight ? mousePosition.x - 32 : mousePosition.x,
+                    y: facingRight ? mousePosition.y : mousePosition.y,
+                    scaleX: facingRight ? 1 : -1
                 }}  
             />
         </>
