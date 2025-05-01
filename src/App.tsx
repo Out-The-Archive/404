@@ -38,7 +38,7 @@ function App() {
                 className="h-[50px] w-[50px] fixed top-0 left-0"
                 transition={{
                     type: 'spring',
-                    damping: 65,
+                    damping: 50,
                 }}
                 animate={{
                     x: facingRight ? mousePosition.x - 32 : mousePosition.x,
