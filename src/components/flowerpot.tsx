@@ -16,13 +16,13 @@ export default function FlowerPot({FlowerType}: FlowerPotProps){
     return (
         <button onClick={()=>setCount(prevCount => (prevCount + 1) % 3)}>
             {
-                (count == 0) && (<div>{flowers[FlowerType][0]}</div>)
+                (count == 0) && (<>{flowers[FlowerType][0]}</>)
             }
             {
-                (count == 1) && (<div>{flowers[FlowerType][1]}</div>)
+                (count == 1) && (<>{flowers[FlowerType][1]}</>)
             }
             {
-                (count == 2) && (<div>{flowers[FlowerType][2]}</div>)
+                (count == 2) && (<>{flowers[FlowerType][2]}</>)
             }
         </button>
     );
