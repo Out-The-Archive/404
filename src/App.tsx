@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import "./App.css";
 import bee from "./bee.png";
-import HomeButton from "./assets/HiveHomeButton";
+import HomeButton from "./components/HiveHomeButton";
+import FlowerPot from "./components/flowerpot";
 
 export default function App() {
     const [mousePosition, setMousePosition] = useState({
@@ -38,14 +39,17 @@ export default function App() {
                         <HomeButton />
                     </div>
                 </div>
-                <div className="flex flex-col justify-end col-start-2 col-span-5 row-start-2 row-span-2 border border-blue-500">
+                <div className="flex flex-col justify-end col-start-2 col-span-6 row-start-2 row-span-2 border border-blue-500">
                     <div className="flex flex-row justify-around px-4 gap-x-4 overflow-hidden">
+                        <div className="bg-pink-500 basis-1/4 aspect-square max-w-[160px] rounded-sm flex flex-col justify-end">
+                            <FlowerPot />
+                        </div>
                         <div className="bg-pink-500 basis-1/2 aspect-square max-w-[160px] rounded-sm"></div>
-                        <div className="bg-pink-500 basis-1/2 aspect-square max-w-[160px] rounded-sm"></div>
+                        <div className="bg-pink-500 basis-1/4 aspect-square max-w-[160px] rounded-sm"></div>
                     </div>
-                    <div className="bg-yellow-900 w-full h-1/11 flex-shrink-0 rounded-sm"></div>
+                    <div className="bg-yellow-900 w-full h-[20px] flex-shrink-0 rounded-sm"></div>
                 </div>
-                <div className="flex flex-col justify-end col-start-2 col-span-9 row-start-6 row-span-2 border border-blue-500">
+                <div className="flex flex-col justify-end col-start-2 col-span-6 row-start-6 row-span-2 border border-blue-500">
                     <div className="flex flex-row justify-around px-4 gap-x-4 overflow-hidden">
                         <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
                         <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm flex flex-col justify-end">
@@ -55,15 +59,15 @@ export default function App() {
                         </div>
                         <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
                     </div>
-                    <div className="bg-yellow-900 w-full h-1/11 flex-shrink-0 rounded-sm"></div>
+                    <div className="bg-yellow-900 w-full h-[20px] flex-shrink-0 rounded-sm"></div>
                 </div>
-                <div className="flex flex-col justify-end col-start-5 col-span-7 row-start-4 row-span-2 border border-blue-500">
+                <div className="flex flex-col justify-end col-start-7 col-span-5 row-start-3 row-span-3 border border-blue-500">
                     <div className="flex flex-row justify-around px-4 gap-x-4 overflow-hidden">
                         <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
                         <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
                         <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
                     </div>
-                    <div className="bg-yellow-900 w-full h-1/11 flex-shrink-0 rounded-sm"></div>
+                    <div className="bg-yellow-900 w-full h-[20px] flex-shrink-0 rounded-sm"></div>
                 </div>
             </div>
             <motion.img
