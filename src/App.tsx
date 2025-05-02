@@ -33,7 +33,7 @@ export default function App() {
     return (
         <>
             <div className="grid grid-cols-12 grid-rows-8 gap-4 h-screen w-[100vw] border border-red-500">
-                <div className="flex justify-center items-center col-start-11 col-span-2 row-span-2 border border-blue-500 overflow-hidden">
+                <div className="flex justify-center items-start col-start-11 col-span-2 row-span-2 border border-blue-500 overflow-hidden">
                     <div className="bg-yellow-300 w-2/3 aspect-[1/1] rounded-sm">
                         {" "}
                         <HomeButton />
@@ -44,7 +44,7 @@ export default function App() {
                         <div className="bg-pink-500 basis-1/4 aspect-square max-w-[160px] rounded-sm flex flex-col justify-end">
                             <FlowerPot />
                         </div>
-                        <div className="bg-pink-500 basis-1/2 aspect-square max-w-[160px] rounded-sm"></div>
+                        <div className="bg-pink-500 basis-3/5 aspect-[2] max-w-[384px] rounded-sm"></div>
                         <div className="bg-pink-500 basis-1/4 aspect-square max-w-[160px] rounded-sm"></div>
                     </div>
                     <div className="bg-yellow-900 w-full h-[20px] flex-shrink-0 rounded-sm"></div>
@@ -53,9 +53,6 @@ export default function App() {
                     <div className="flex flex-row justify-around px-4 gap-x-4 overflow-hidden">
                         <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
                         <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm flex flex-col justify-end">
-                            <p className="text-6xl text-white font-bold text-center">
-                                404
-                            </p>
                         </div>
                         <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
                     </div>
