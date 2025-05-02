@@ -2,8 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import "./App.css";
 import bee from "./bee.png";
+import HomeButton from "./assets/HiveHomeButton";
 
-function App() {
+export default function App() {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
         y: 0,
@@ -32,7 +33,10 @@ function App() {
         <>
             <div className="grid grid-cols-12 grid-rows-8 gap-4 h-screen w-[100vw] border border-red-500">
                 <div className="flex justify-center items-center col-start-11 col-span-2 row-span-2 border border-blue-500 overflow-hidden">
-                    <div className="bg-yellow-300 w-2/3 aspect-[1/1] rounded-sm"></div>
+                    <div className="bg-yellow-300 w-2/3 aspect-[1/1] rounded-sm">
+                        {" "}
+                        <HomeButton />
+                    </div>
                 </div>
                 <div className="flex flex-col justify-end col-start-2 col-span-5 row-start-2 row-span-2 border border-blue-500">
                     <div className="flex flex-row justify-around px-4 gap-x-4 overflow-hidden">
@@ -79,5 +83,3 @@ function App() {
         </>
     );
 }
-
-export default App;
