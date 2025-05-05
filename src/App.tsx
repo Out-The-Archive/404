@@ -5,7 +5,68 @@ import bee from "./bee.png";
 import HomeButton from "./components/HiveHomeButton";
 import FlowerPot from "./components/flowerpot";
 
+const asters = [
+    {   
+        key: 0,
+        name: 'Asta',
+        message: 'hi im Asta!',
+        src: 'public/Asta.svg'
+    },
+    {   
+        key: 1,
+        name: 'Asteri',
+        message: 'hi im Asteri!',
+        src: 'public/Asteri.svg'
+    },
+    {   
+        key: 2,
+        name: 'Astina',
+        message: 'hi im Astina!',
+        src: 'public/Astina.svg'
+    },
+    {   
+        key: 3,
+        name: 'Aston',
+        message: 'hi im Aston!',
+        src: 'public/Aston.svg'
+    },
+    {   
+        key: 4,
+        name: 'Astren',
+        message: 'hi im Astren!',
+        src: 'public/Astren.svg'
+    },
+    {   
+        key: 5,
+        name: 'Astrid',
+        message: 'hi im Astrid!',
+        src: 'public/Astrid.svg'
+    },
+    {   
+        key: 6,
+        name: 'Astro',
+        message: 'hi im Astro!',
+        src: 'public/Astro.svg'
+    },
+    {   
+        key: 7,
+        name: 'Astrota',
+        message: 'hi im Astrota!',
+        src: 'public/Astrota.svg'
+    },
+    {   
+        key: 8,
+        name: 'Rick',
+        message: 'hi im Rick!',
+        src: 'public/Rick.svg'
+    },
+
+]
+
+const currentAster = Math.floor(Math.random() * 9);
+
 export default function App() {
+
     const [mousePosition, setMousePosition] = useState({
         x: 0,
         y: 0,
@@ -32,7 +93,12 @@ export default function App() {
 
     return (
         <>
-            <div className="grid grid-cols-12 grid-rows-8 gap-4 h-screen w-[100vw] border border-red-500">
+            <div className="md:hidden flex justify-center items-center flex-col h-full">
+                <img className="" src={asters[currentAster].src} alt={asters[currentAster].name}/>
+                <h1 className="m-2 text-5xl">Error 404</h1>
+                <span className="m-2 text-xl">{asters[currentAster].message}</span>
+            </div>
+            <div className="hidden md:grid grid-cols-12 grid-rows-8 gap-4 h-screen w-[100vw] border border-red-500">
                 <div className="flex justify-center items-start col-start-11 col-span-2 row-span-2 border border-blue-500 overflow-hidden">
                     <div className="bg-yellow-300 w-2/3 aspect-[1/1] rounded-sm">
                         {" "}
