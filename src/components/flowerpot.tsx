@@ -24,7 +24,7 @@ import {
     Rick0,
     Rick1,
     Rick2,
-} from "./flowers";
+} from "../assets/flowers";
 
 type flowerType =
     | "Astrota"

@@ -4,6 +4,45 @@ import "./App.css";
 import bee from "./bee.png";
 import HomeButton from "./components/HiveHomeButton";
 import FlowerPot from "./components/flowerpot";
+import AsterComponent from "./components/aster";
+import type { Aster as AsterName } from "./components/aster";
+
+const asters = [
+    {
+        name: "Asteri",
+        message: "hi im Asteri!",
+    },
+    {
+        name: "Astina",
+        message: "hi im Astina!",
+    },
+    {
+        name: "Aston",
+        message: "hi im Aston!",
+    },
+    {
+        name: "Astren",
+        message: "hi im Astren!",
+    },
+    {
+        name: "Astrid",
+        message: "hi im Astrid!",
+    },
+    {
+        name: "Astro",
+        message: "hi im Astro!",
+    },
+    {
+        name: "Astrota",
+        message: "hi im Astrota!",
+    },
+    {
+        name: "Rick",
+        message: "hi im Rick!",
+    },
+];
+
+const currentAster = Math.floor(Math.random() * 8);
 
 export default function App() {
     const [mousePosition, setMousePosition] = useState({
@@ -32,12 +71,21 @@ export default function App() {
 
     return (
         <>
-            <div className="grid grid-cols-12 grid-rows-8 gap-4 h-screen w-[100vw] bg-[#282828]">
-                <div className="flex justify-center items-start col-start-11 col-span-2 row-span-2 border border-blue-500 overflow-hidden">
+            <div className="md:hidden flex justify-center items-center flex-col h-full bg-[#282828]">
+                <AsterComponent
+                    Aster={asters[currentAster].name as AsterName}
+                />
+                <h1 className="m-2 text-5xl text-white">Error 404</h1>
+                <span className="m-2 text-xl text-white">
+                    {asters[currentAster].message}
+                </span>
+            </div>
+            <div className="hidden md:grid grid-cols-12 grid-rows-8 gap-4 h-screen w-screen bg-[#282828]">
+                {/* <div className="flex justify-center items-start col-start-11 col-span-2 row-span-2 border border-blue-500 overflow-hidden">
                     <div className="bg-yellow-300 w-2/3 aspect-[1/1] rounded-sm">
                         <HomeButton />
                     </div>
-                </div>
+                </div> */}
                 <div className="flex flex-col justify-end col-start-2 col-span-6 row-start-1 row-span-3">
                     <div className="flex flex-row justify-around px-4 gap-x-4 overflow-hidden">
                         <div className="basis-1/4 aspect-square max-w-[160px] rounded-sm flex flex-col items-center justify-end">
