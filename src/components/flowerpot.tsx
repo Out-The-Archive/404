@@ -55,7 +55,7 @@ export default function FlowerPot({ FlowerType }: FlowerPotProps) {
     const [count, setCount] = useState(0);
     return (
         <button
-            className="w-auto h-auto"
+            className="w-auto h-auto hover:cursor-pointer"
             onClick={() => setCount((prevCount) => (prevCount + 1) % 3)}
         >
             {count == 0 && <>{flowers[FlowerType][0]}</>}
