@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import "./App.css";
 import bee from "./bee.png";
-import HomeButton from "./components/HiveHomeButton";
+// import HomeButton from "./components/HiveHomeButton";
 import FlowerPot from "./components/flowerpot";
 import AsterComponent from "./components/aster";
 import type { Aster as AsterName } from "./components/aster";
