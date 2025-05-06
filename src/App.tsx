@@ -39,34 +39,39 @@ export default function App() {
                         <HomeButton />
                     </div>
                 </div>
-                <div className="flex flex-col justify-end col-start-2 col-span-6 row-start-1 row-span-3 border border-blue-500">
+                <div className="flex flex-col justify-end col-start-2 col-span-6 row-start-1 row-span-3">
                     <div className="flex flex-row justify-around px-4 gap-x-4 overflow-hidden">
-                        <div className="bg-pink-500 basis-1/4 aspect-square max-w-[160px] rounded-sm flex flex-col justify-end">
-                            <div className="w-8">
-                                <FlowerPot FlowerType="Astrota"/>
-                            </div>
+                        <div className="bg-pink-200 basis-1/4 aspect-square max-w-[160px] rounded-sm flex flex-col items-center justify-end">
+                            <FlowerPot FlowerType="Astrota"/>
                         </div>
-                        <div className="bg-pink-500 basis-3/5 aspect-[2] max-w-[384px] rounded-sm"></div>
-                        <div className="bg-pink-500 basis-1/4 aspect-square max-w-[160px] rounded-sm"></div>
+                        <div className="basis-3/5 aspect-[2] max-w-[384px] rounded-sm"></div>
+                        <div className="bg-pink-200 basis-1/4 aspect-square max-w-[160px] rounded-sm flex flex-col items-center justify-end">
+                            <FlowerPot FlowerType="Astrota"/>
+                        </div>
                     </div>
                     <div className="bg-yellow-900 w-full h-[20px] flex-shrink-0 rounded-sm"></div>
                 </div>
-                <div className="flex flex-col justify-end col-start-2 col-span-6 row-start-6 row-span-2 border border-blue-500">
-                    <div className="flex flex-row justify-around px-4 gap-x-4 overflow-hidden">
-                        <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm flex flex-col justify-end">
+                <div className="flex flex-col justify-end col-start-2 col-span-6 row-start-6 row-span-2">
+                    <div className="flex flex-row justify-around px-4 gap-x-4">
+                        <div className="bg-pink-200 basis-1/3 aspect-square max-w-[160px] rounded-sm flex flex-col items-center justify-end">
                             <FlowerPot FlowerType='Astrota'/>
                         </div>
-                        <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm flex flex-col justify-end">
+                        <div className="bg-pink-200 basis-1/3 aspect-square max-w-[160px] rounded-sm flex flex-col items-center justify-end">
+                            <FlowerPot FlowerType="Astrota"/>
                         </div>
-                        <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
+                        <div className="basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
                     </div>
                     <div className="bg-yellow-900 w-full h-[20px] flex-shrink-0 rounded-sm"></div>
                 </div>
-                <div className="flex flex-col justify-end col-start-7 col-span-5 row-start-3 row-span-3 border border-blue-500">
+                <div className="flex flex-col justify-end col-start-7 col-span-5 row-start-3 row-span-3">
                     <div className="flex flex-row justify-around px-4 gap-x-4 overflow-hidden">
-                        <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
-                        <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
-                        <div className="bg-pink-500 basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
+                        <div className="basis-1/3 aspect-square max-w-[160px] rounded-sm"></div>
+                        <div className="bg-pink-200 basis-1/3 aspect-square max-w-[160px] rounded-sm flex flex-col items-center justify-end">
+                            <FlowerPot FlowerType="Astrota"/>
+                        </div>
+                        <div className="bg-pink-200 basis-1/3 aspect-square max-w-[160px] rounded-sm flex flex-col items-center justify-end">
+                            <FlowerPot FlowerType="Astrota"/>
+                        </div>
                     </div>
                     <div className="bg-yellow-900 w-full h-[20px] flex-shrink-0 rounded-sm"></div>
                 </div>
