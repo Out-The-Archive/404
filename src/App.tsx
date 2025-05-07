@@ -135,6 +135,7 @@ export default function App() {
                 src={bee}
                 alt="Bee"
                 className="h-[50px] w-[50px] fixed top-0 left-0"
+                style={{ pointerEvents: "none" }}
                 transition={{
                     type: "spring",
                     damping: 50,
