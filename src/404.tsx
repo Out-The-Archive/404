@@ -69,10 +69,13 @@ export default function Error404() {
     return (
         <div className="relative h-screen w-screen bg-[#282828] overflow-hidden">
             {/* Top Left Corner */}
-            <div className="absolute left-[5%] top-[35%]">
+            <div className="absolute left-[10%] top-[35%]">
                 <div className="relative">
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
-                        <AsterComponent Aster="Aston" size={8} />
+                    <div className="absolute bottom-0 -translate-x-16 -translate-y-[120px] pointer-events-none z-10">
+                        <AsterComponent Aster="Aston" size={8} scale={0.3} />
+                    </div>
+                    <div className="absolute bottom-0 translate-x-40 -translate-y-[180px] rotate-45">
+                        <AsterComponent Aster="Astina" size={8} scale={0.1} />
                     </div>
                     <FlowerPot FlowerType="Aston" />
                 </div>
@@ -81,8 +84,8 @@ export default function Error404() {
             {/* Top Center-Right */}
             <div className="absolute left-[50%] top-[25%]">
                 <div className="relative">
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
-                        <AsterComponent Aster="Rick" size={8} />
+                    <div className="absolute bottom-0 translate-x-5 -translate-y-[90px] pointer-events-none z-10">
+                        <AsterComponent Aster="Rick" size={8} scale={0.3} />
                     </div>
                     <FlowerPot FlowerType="Rick" />
                 </div>
@@ -91,8 +94,8 @@ export default function Error404() {
             {/* Top Right Corner */}
             <div className="absolute left-[85%] top-[30%]">
                 <div className="relative">
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
-                        <AsterComponent Aster="Asteri" size={8} />
+                    <div className="absolute bottom-0 -translate-x-28 -translate-y-[75px] pointer-events-none z-10">
+                        <AsterComponent Aster="Asteri" size={8} scale={0.3} />
                     </div>
                     <FlowerPot FlowerType="Asteri" />
                 </div>
@@ -101,8 +104,8 @@ export default function Error404() {
             {/* Center Left */}
             <div className="absolute left-[5%] top-[80%]">
                 <div className="relative">
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
-                        <AsterComponent Aster="Astina" size={8} />
+                    <div className="absolute bottom-0 translate-x-10 -translate-y-[100px] pointer-events-none z-10">
+                        <AsterComponent Aster="Astina" size={8} scale={0.3} />
                     </div>
                     <FlowerPot FlowerType="Astina" />
                 </div>
@@ -111,8 +114,8 @@ export default function Error404() {
             {/* Center Bottom */}
             <div className="absolute left-[55%] top-[100%] transform -translate-x-1/2">
                 <div className="relative">
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
-                        <AsterComponent Aster="Astro" size={8} />
+                    <div className="absolute bottom-0 -translate-x-20 -translate-y-[100px] pointer-events-none z-10">
+                        <AsterComponent Aster="Astro" size={8} scale={0.3} />
                     </div>
                     <FlowerPot FlowerType="Astro" />
                 </div>
@@ -121,8 +124,8 @@ export default function Error404() {
             {/* Bottom Right Corner */}
             <div className="absolute left-[85%] top-[85%]">
                 <div className="relative">
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
-                        <AsterComponent Aster="Astrid" size={8} />
+                    <div className="absolute bottom-0 -translate-y-[60px] pointer-events-none z-10">
+                        <AsterComponent Aster="Astrid" size={8} scale={0.3} />
                     </div>
                     <FlowerPot FlowerType="Astrid" />
                 </div>
@@ -139,6 +142,7 @@ export default function Error404() {
                 src={bee}
                 alt="Bee"
                 className="h-[50px] w-[50px] fixed top-0 left-0"
+                style={{pointerEvents: "none"}}
                 transition={{
                     type: "spring",
                     damping: 50,
