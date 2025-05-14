@@ -1,8 +1,8 @@
 export function Astrota() {
     return (
         <svg
-            width="413"
-            height="497"
+            width="100%"
+            height="auto"
             viewBox="0 0 413 497"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -142,8 +142,8 @@ export function Astrota() {
 export function Astren() {
     return (
         <svg
-            width="513"
-            height="547"
+            width="100%"
+            height="auto"
             viewBox="0 0 513 547"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -472,8 +472,8 @@ export function Astren() {
 export function Asteri() {
     return (
         <svg
-            width="413"
-            height="497"
+            width="100%"
+            height="auto"
             viewBox="0 0 413 497"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -613,8 +613,8 @@ export function Asteri() {
 export function Aston() {
     return (
         <svg
-            width="413"
-            height="497"
+            width="100%"
+            height="auto"
             viewBox="0 0 413 497"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -753,8 +753,8 @@ export function Aston() {
 export function Astro() {
     return (
         <svg
-            width="413"
-            height="497"
+            width="100%"
+            height="auto"
             viewBox="0 0 413 497"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -893,8 +893,8 @@ export function Astro() {
 export function Astina() {
     return (
         <svg
-            width="413"
-            height="497"
+            width="100%"
+            height="auto"
             viewBox="0 0 413 497"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -1034,8 +1034,8 @@ export function Astina() {
 export function Astrid() {
     return (
         <svg
-            width="413"
-            height="497"
+            width="100%"
+            height="auto"
             viewBox="0 0 413 497"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -1174,8 +1174,8 @@ export function Astrid() {
 export function Rick() {
     return (
         <svg
-            width="434"
-            height="508"
+            width="100%"
+            height="auto"
             viewBox="0 0 434 508"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

@@ -42,7 +42,7 @@ const asters = [
     },
 ];
 
-const currentAster = Math.floor(Math.random() * 8);
+const currentAster = Math.floor(Math.random() * 9);
 
 export default function App() {
     const [mousePosition, setMousePosition] = useState({
@@ -71,14 +71,17 @@ export default function App() {
 
     return (
         <>
-            <div className="md:hidden flex justify-center items-center flex-col h-full bg-[#282828]">
-                <AsterComponent
-                    Aster={asters[currentAster].name as AsterName}
-                />
-                <h1 className="m-2 text-5xl text-white">Error 404</h1>
-                <span className="m-2 text-xl text-white">
-                    {asters[currentAster].message}
-                </span>
+            <div className="md:hidden relative h-full bg-no-repeat bg-cover bg-center bg-[url(src/assets/MobileBg.svg)]">
+                <div className="absolute w-[70%] h-auto top-[27%] left-[15%]">
+                    <AsterComponent
+                        Aster={asters[currentAster].name as AsterName}
+                    />
+                </div>
+                <div className="absolute flex items-center justify-center top-[80%] left-[calc(50%-112.335px)]">
+                    <span className="-rotate-20 m-2 text-8xl font-black text-[#DF6431]">4</span>
+                    <span className="rotate-10 m-2 text-8xl font-black text-[#EEBCBE]">0</span>
+                    <span className="rotate-65 m-2 text-8xl font-black text-[#449E5B]">4</span>
+                </div> 
             </div>
             <div className="hidden md:grid grid-cols-12 grid-rows-8 gap-4 h-screen w-screen bg-[#282828]">
                 {/* <div className="flex justify-center items-start col-start-11 col-span-2 row-span-2 border border-blue-500 overflow-hidden">
@@ -134,7 +137,7 @@ export default function App() {
             <motion.img
                 src={bee}
                 alt="Bee"
-                className="h-[50px] w-[50px] fixed top-0 left-0"
+                className="h-[50px] w-[50px] fixed top-0 left-0 hidden md:block"
                 transition={{
                     type: "spring",
                     damping: 50,
