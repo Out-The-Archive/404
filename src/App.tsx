@@ -131,20 +131,13 @@ export default function App() {
                     <div className="bg-yellow-900 w-full h-[20px] flex-shrink-0 rounded-sm"></div>
                 </div>
             </div>
-            <motion.img
-                src={bee}
-                alt="Bee"
-                className="h-[50px] w-[50px] fixed top-0 left-0"
-                transition={{
-                    type: "spring",
-                    damping: 50,
-                }}
-                animate={{
-                    x: facingRight ? mousePosition.x - 32 : mousePosition.x,
-                    y: facingRight ? mousePosition.y : mousePosition.y,
-                    scaleX: facingRight ? 1 : -1,
-                }}
-            />
+            
+        
+
+
+
+
         </>
+
     );
 }
