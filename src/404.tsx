@@ -131,10 +131,10 @@ export default function Error404() {
                 </div>
             </div>
 
-
-            {/* 404 Text */}
+            {/* 404 Center */}
             <div className="h-screen flex items-center justify-center">
                <div className="absolute -translate-y-1/4">
+
                 {/* Inline Asterisk SVG*/}
                     <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M142.734 161.12C146.033 164.419 151.381 164.419 154.68 161.12L160.652 155.148C163.951 151.849 163.951 146.501 160.652 143.203L129.962 112.512L99.4335 99.9016L111.805 130.19L142.734 161.12Z" fill="#99BBD3"/>
