@@ -5,44 +5,64 @@ import bee from "./bee.png";
 // import HomeButton from "./components/HiveHomeButton";
 import FlowerPot from "./components/flowerpot";
 import AsterComponent from "./components/aster";
+import MobileLetter from "./components/MobileLetter";
 import type { Aster as AsterName } from "./components/aster";
 
 const asters = [
     {
         name: "Asteri",
-        message: "hi im Asteri!",
+        color1: "#DF6431",
+        color2: "#DF6431",
+        color3: "#DF6431"
     },
     {
         name: "Astina",
-        message: "hi im Astina!",
+        color1: "#149334",
+        color2: "#149334",
+        color3: "#149334"
     },
     {
         name: "Aston",
-        message: "hi im Aston!",
+        color1: "#99BBD3",
+        color2: "#99BBD3",
+        color3: "#99BBD3"
     },
     {
         name: "Astren",
-        message: "hi im Astren!",
+        color1: "#FFFFFF",
+        color2: "#FFFFFF",
+        color3: "#FFFFFF",
+        background1: "linear-gradient(#DF6431, #149334)",
+        background2: "linear-gradient(#149334, #99BBD3)",
+        background3: "linear-gradient(#99BBD3, #EEBCBE)",
     },
     {
         name: "Astrid",
-        message: "hi im Astrid!",
+        color1: "#EEBCBE",
+        color2: "#EEBCBE",
+        color3: "#EEBCBE"
     },
     {
         name: "Astro",
-        message: "hi im Astro!",
+        color1: "#A49E9B",
+        color2: "#A49E9B",
+        color3: "#A49E9B"
     },
     {
         name: "Astrota",
-        message: "hi im Astrota!",
+        color1: "#DF6431",
+        color2: "#EEBCBE",
+        color3: "#449E5B"
     },
     {
         name: "Rick",
-        message: "hi im Rick!",
+        color1: "#F4D326",
+        color2: "#F4D326",
+        color3: "#F4D326"
     },
 ];
 
-const currentAster = Math.floor(Math.random() * 9);
+const currentAster = Math.floor(Math.random() * 8);
 
 export default function App() {
     const [mousePosition, setMousePosition] = useState({
@@ -72,15 +92,15 @@ export default function App() {
     return (
         <>
             <div className="md:hidden relative h-full bg-no-repeat bg-cover bg-center bg-[url(src/assets/MobileBg.svg)]">
-                <div className="absolute w-[70%] h-auto top-[27%] left-[15%]">
+                <div className="absolute w-[80%] h-auto top-[29%] left-[10%]">
                     <AsterComponent
                         Aster={asters[currentAster].name as AsterName}
                     />
                 </div>
-                <div className="absolute flex items-center justify-center top-[80%] left-[calc(50%-112.335px)]">
-                    <span className="-rotate-20 m-2 text-8xl font-black text-[#DF6431]">4</span>
-                    <span className="rotate-10 m-2 text-8xl font-black text-[#EEBCBE]">0</span>
-                    <span className="rotate-65 m-2 text-8xl font-black text-[#449E5B]">4</span>
+                <div className="absolute flex items-center justify-center top-[77.5%] left-[calc(50%-112.335px)]">
+                    <MobileLetter character="4" color={asters[currentAster].color1} background={asters[currentAster].background1} rotation={-20}/>
+                    <MobileLetter character="0" color={asters[currentAster].color2} background={asters[currentAster].background2} rotation={10}/>
+                    <MobileLetter character="4" color={asters[currentAster].color3} background={asters[currentAster].background3} rotation={40}/>
                 </div> 
             </div>
             <div className="hidden md:grid grid-cols-12 grid-rows-8 gap-4 h-screen w-screen bg-[#282828]">
