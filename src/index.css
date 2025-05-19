@@ -1,5 +1,24 @@
 @import "tailwindcss";
-#root{
+#root {
     width: 100vw;
     height: 100vh;
+}
+
+@font-face {
+    font-family: "Rylee";
+    src: url("/fonts/Rylee.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rylee-Best";
+    src: url("/fonts/Rylee-Best.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@theme {
+    --font-rylee: Rylee, cursive;
+    --font-rylee-best: Rylee-Best;
 }

@@ -36,10 +36,24 @@ const Asters = {
     Rick: <Rick />,
 };
 
-export default function Aster({ Aster, size = 32, scale }: AsterProps) {
+export default function Aster({ Aster, size = 32, scale = 1 }: AsterProps) {
     return (
-        <div style={{ width: size, height: size, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ width: '100%', height: '100%', transform: `scale(${scale})` }}>
+        <div
+            style={{
+                width: size,
+                height: size,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+            }}
+        >
+            <div
+                style={{
+                    width: "100%",
+                    height: "100%",
+                    transform: `scale(${scale})`,
+                }}
+            >
                 {Asters[Aster]}
             </div>
         </div>
