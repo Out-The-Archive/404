@@ -91,7 +91,10 @@ export default function App() {
 
     return (
         <>
-            <div className="md:hidden relative h-full bg-no-repeat bg-cover bg-center bg-[url(src/assets/MobileBg.svg)]">
+            <div
+                className="md:hidden relative h-full bg-no-repeat bg-cover bg-center"
+                style={{ backgroundImage: "url(src/assets/MobileBg.svg)" }}
+            >
                 <div className="absolute h-auto top-[29%] left-1/2 -translate-x-1/2">
                     <AsterComponent
                         Aster={asters[currentAster].name as AsterName}
