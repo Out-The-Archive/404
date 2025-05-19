@@ -13,19 +13,19 @@ const asters = [
         name: "Asteri",
         color1: "#DF6431",
         color2: "#DF6431",
-        color3: "#DF6431"
+        color3: "#DF6431",
     },
     {
         name: "Astina",
         color1: "#149334",
         color2: "#149334",
-        color3: "#149334"
+        color3: "#149334",
     },
     {
         name: "Aston",
         color1: "#99BBD3",
         color2: "#99BBD3",
-        color3: "#99BBD3"
+        color3: "#99BBD3",
     },
     {
         name: "Astren",
@@ -40,25 +40,25 @@ const asters = [
         name: "Astrid",
         color1: "#EEBCBE",
         color2: "#EEBCBE",
-        color3: "#EEBCBE"
+        color3: "#EEBCBE",
     },
     {
         name: "Astro",
         color1: "#A49E9B",
         color2: "#A49E9B",
-        color3: "#A49E9B"
+        color3: "#A49E9B",
     },
     {
         name: "Astrota",
         color1: "#DF6431",
         color2: "#EEBCBE",
-        color3: "#449E5B"
+        color3: "#449E5B",
     },
     {
         name: "Rick",
         color1: "#F4D326",
         color2: "#F4D326",
-        color3: "#F4D326"
+        color3: "#F4D326",
     },
 ];
 
@@ -98,10 +98,25 @@ export default function App() {
                     />
                 </div>
                 <div className="absolute flex items-center justify-center top-[77.5%] left-[calc(50%-112.335px)]">
-                    <MobileLetter character="4" color={asters[currentAster].color1} background={asters[currentAster].background1} rotation={-20}/>
-                    <MobileLetter character="0" color={asters[currentAster].color2} background={asters[currentAster].background2} rotation={10}/>
-                    <MobileLetter character="4" color={asters[currentAster].color3} background={asters[currentAster].background3} rotation={40}/>
-                </div> 
+                    <MobileLetter
+                        character="4"
+                        color={asters[currentAster].color1}
+                        background={asters[currentAster].background1}
+                        rotation={-20}
+                    />
+                    <MobileLetter
+                        character="0"
+                        color={asters[currentAster].color2}
+                        background={asters[currentAster].background2}
+                        rotation={10}
+                    />
+                    <MobileLetter
+                        character="4"
+                        color={asters[currentAster].color3}
+                        background={asters[currentAster].background3}
+                        rotation={40}
+                    />
+                </div>
             </div>
             <div className="hidden md:grid grid-cols-12 grid-rows-8 gap-4 h-screen w-screen bg-[#282828]">
                 {/* <div className="flex justify-center items-start col-start-11 col-span-2 row-span-2 border border-blue-500 overflow-hidden">
