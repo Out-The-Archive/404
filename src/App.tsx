@@ -93,7 +93,7 @@ export default function App() {
         <>
             <div
                 className="md:hidden relative h-full bg-no-repeat bg-cover bg-center bg-[#FFFAF9]"
-                style={{ backgroundImage: "url(/MobileBg.svg)" }}
+                style={{ backgroundImage: "url(/MobileBg.png)" }}
             >
                 <div className="absolute h-auto top-[29%] left-1/2 -translate-x-1/2">
                     <AsterComponent
